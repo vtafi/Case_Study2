@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style> body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #ff7f50;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .navbar-brand img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Card sản phẩm */
+    .custom-card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .custom-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain; /* Đảm bảo ảnh được hiển thị đầy đủ trong không gian card */
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 1rem;
+        color: #d0021c;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Button */
+    .custom-card .btn-primary {
+        border-color: #2a83e9;
+        background-color: #2a83e9;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .custom-card .btn-primary:hover {
+        background-color: #1a5cb1;
+        color: white;
+    }
+
+    /* Khoảng cách giữa các card */
+    .col {
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="BanHang.html"><img class="pic" src="https://emojigraph.org/media/apple/rabbit-face_1f430.png" alt="Uploaded Image">Thỏ Mobile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Order1.html">Mua hàng</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+<div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="16prm" src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-titan-trang-thumb-600x600.png" class="card-img-top" alt="iPhone 16 Pro Max">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone 16 ProMax</h5>
+                    <p class="card-text">512 Gb</p>
+                    <p class="price">38.490.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag me-2"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="14pro" src="https://thegioitao.vn/wp-content/uploads/2022/09/iPhone-14-Pro-series-2-600x600-1.png" class="card-img-top" alt="iPhone 14 Pro">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone 14 Pro</h5>
+                    <p class="card-text">512 Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag me-2"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="16pl" src="https://cdn.tgdd.vn/Products/Images/42/329138/iphone-16-plus-hong-thumb-600x600.jpg" class="card-img-top" alt="iPhone 16 plus">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone 16 Plus</h5>
+                    <p class="card-text">512Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="Fold6" src="https://cdn.tgdd.vn/Products/Images/42/320721/samsung-galaxy-z-fold6-xam-thumbn-600x600.jpg" class="card-img-top" alt="Zfold6">
+                <div class="card-body">
+                    <h5 class="card-title">SamSung Zfold 6</h5>
+                    <p class="card-text">12/512Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="Zflip6" src="https://cdn.tgdd.vn/Products/Images/42/320722/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg" class="card-img-top" alt="Zflip6">
+                <div class="card-body">
+                    <h5 class="card-title">SamSung Zflip 6</h5>
+                    <p class="card-text">8/256gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="S24U" src="https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumbnew-600x600.jpg" class="card-img-top" alt="S24 Ultra">
+                <div class="card-body">
+                    <h5 class="card-title">SamSung S24 Ultra</h5>
+                    <p class="card-text">12/512Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag me-2"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="14T" src="https://cdn.tgdd.vn/Products/Images/42/329938/xiaomi-14t-grey-thumb-600x600.jpg" class="card-img-top" alt="Xiaomi 14 T">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi 14T</h5>
+                    <p class="card-text">12/512Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="xiaomi 14U" src="https://cdn.tgdd.vn/Products/Images/42/313889/xiaomi-14-ultra-white-thumbnew-600x600.jpg" class="card-img-top" alt="Xiaomi 14 Ultra">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi 14 Ultra</h5>
+                    <p class="card-text">12/512Gb</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="oppo" src="https://cdn.tgdd.vn/Products/Images/42/306980/oppo-reno10-pro-plus-thumbnew-600x600.jpg" class="card-img-top" alt="OPPO Reno10 Pro+ 5G">
+                <div class="card-body">
+                    <h5 class="card-title">OPPO Reno10 Pro+ 5G </h5>
+                    <p class="card-text">12GB/256GB</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img id="s24" src="https://cdn.tgdd.vn/Products/Images/42/319665/samsung-galaxy-s24-yellow-thumbnew-600x600.jpg" class="card-img-top" alt="Samsung Galaxy S24 5G">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Galaxy S24 </h5>
+                    <p class="card-text">8GB/256GB</p>
+                    <p class="price">3.790.000</p>
+                    <a href="Order1.html" class="btn btn-primary">
+                        <i class="bi bi-bag"></i>
+                        Mua
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+</html>
