@@ -345,7 +345,7 @@
                         <input type="text" class="form-control" placeholder="Huỳnh Lắm">
                     </div>
                 </div>
-                <a href="ThanhToans.html"><button type="button">Thanh toán</button></a>
+                <a href="ThanhToans.html"><button type="button" onclick="hienthi()">Thanh toán</button></a>
                 <img style="display: none" id="thanhtoan" src="Screenshot%202024-10-22%20212506.png"  style="align-items: center">
             </td></tr>
         </table>
@@ -391,7 +391,7 @@
         displayProducts(products);
     }
     function hienthi() {
-        document.getElementById("thanhtoan").style.display = "block";
+        alert("Chuyển đến trang thanh toán")
     }
     document.getElementById("add").addEventListener("click", function () {
         let newMay = document.getElementById("mauMay");
@@ -414,9 +414,9 @@
                 name: "iPhone 14 Pro",
                 imgUrl: "https://thegioitao.vn/wp-content/uploads/2022/09/iPhone-14-Pro-series-2-600x600-1.png",
                 prices: {
-                    "8Gb/256Gb": "30.490.000",
-                    "12Gb/512Gb": "37.990.000",
-                    "16Gb/1T": "43.990.000"
+                    "8Gb/256Gb": "20.490.000",
+                    "12Gb/512Gb": "23.990.000",
+                    "16Gb/1T": "27.990.000"
                 },
             },
             {
@@ -424,8 +424,8 @@
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/329138/iphone-16-plus-hong-thumb-600x600.jpg",
                 prices: {
                     "8Gb/256Gb": "35.490.000",
-                    "12Gb/512Gb": "42.990.000",
-                    "16Gb/1T": "49.990.000"
+                    "12Gb/512Gb": "37.990.000",
+                    "16Gb/1T": "38.990.000"
                 },
 
             },
@@ -434,69 +434,75 @@
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/320721/samsung-galaxy-z-fold6-xam-thumbn-600x600.jpg",
                 prices: {
                     "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "12Gb/512Gb": "48.990.000",
+                    "16Gb/1T": "49.990.000"
                 },
             },
             {
                 name: "SamSung Zflip 6",
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/320722/samsung-galaxy-z-flip6-xanh-thumbn-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "28.990.000",
+                    "12Gb/512Gb": "30.990.000",
+                    "16Gb/1T": "51.990.000"
                 }
             },
             {
                 name: "SamSung S24 Ultra"  ,
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumbnew-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "36.490.000",
+                    "12Gb/512Gb": "38.990.000",
+                    "16Gb/1T": "39.990.000"
                 }
             },
             {
                 name:"Xiaomi 14T",
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/329938/xiaomi-14t-grey-thumb-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "12.990.000",
+                    "12Gb/512Gb": "14.990.000",
+                    "16Gb/1T": "17.990.000"
                 }
             },
             {
                 name: "Xiaomi 14 Ultra",
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/313889/xiaomi-14-ultra-white-thumbnew-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "19.490.000",
+                    "12Gb/512Gb": "22.990.000",
+                    "16Gb/1T": "25.990.000"
                 }
             },
             {
                 name: "OPPO Reno10 Pro+ 5G",
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/306980/oppo-reno10-pro-plus-thumbnew-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "22.990.000",
+                    "12Gb/512Gb": "25.990.000",
+                    "16Gb/1T": "27.990.000"
                 }
             },
             {
                 name: "Samsung Galaxy S24",
                 imgUrl: "https://cdn.tgdd.vn/Products/Images/42/319665/samsung-galaxy-s24-yellow-thumbnew-600x600.jpg",
                 prices: {
-                    "8Gb/256Gb": "45.490.000",
-                    "12Gb/512Gb": "52.990.000",
-                    "16Gb/1T": "59.990.000"
+                    "8Gb/256Gb": "21.990.000",
+                    "12Gb/512Gb": "23.990.000",
+                    "16Gb/1T": "25.990.000"
                 }
             }
 
         ];
         if (luachon !== "Vui lòng chọn mẫu máy" && luachon2 !== "Vui lòng chọn dung lượng") {
             // Tìm sản phẩm trong productList dựa vào tên sản phẩm
-            const selectedProduct = productList.find(product => product.name === luachon);
+            let selectedProduct = null;
+            for (let i = 0; i < productList.length; i++) {
+                if (productList[i].name === luachon) {
+                    selectedProduct = productList[i];
+                    break; // Dừng vòng lặp khi tìm thấy sản phẩm phù hợp
+                }
+            }
             if (selectedProduct) {
                 // Lấy giá từ thông tin của sản phẩm
                 let price
